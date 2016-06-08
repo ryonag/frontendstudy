@@ -1,0 +1,21 @@
+.sample1 {
+    border:solid 1px #ccc;
+    font-weight:bold;
+    font-family:sans-serif;
+    margin:0 auto 3em;
+    padding:0;
+    width:20%;
+}
+.sample1 ul {
+    padding:0;
+    margin:0 -2em -2em 0;
+}  /*マイナスの値が ネガティブ・マージン*/
+.sample1 ul li {
+    margin:1em;
+    padding:1em;
+    list-style:none;
+    background:rgba(102, 153, 255, 0.5);
+    border-radius:5px;
+    color:#fff;
+    line-height:1em;
+}

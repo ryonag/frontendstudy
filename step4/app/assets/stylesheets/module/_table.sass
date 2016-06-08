@@ -1,0 +1,138 @@
+
+ul
+  display: table
+  width: 100%
+  table-layout: fixed
+  font-size: 15px
+  padding-left: 0px
+
+ul ol
+  display: table-row
+
+ul li
+  display: table-cell
+  vertical-align: middle
+  border-top: 1px solid #ddd
+
+@mixin table-margin-top($top:1%)
+  margin-top: $top
+
+@mixin table-height($height:600px)
+  height: $height
+
+@mixin font-weight($weight:bold)
+  font-weight: $weight
+
+.table-ul
+  @include table-margin-top
+  @include table-height
+  @include font-weight
+
+@mixin font-weight($weight:normal)
+  font-weight: $weight
+
+.table-ul ol:nth-child(3)
+  background-color: #ddd
+  @include font-weight
+
+.table-ul ol:nth-child(6)
+  background-color: #ddd
+  @include font-weight
+
+@mixin ol1-height($height:40px)
+  height: $height
+.list
+  @include ol1-height
+
+@mixin ol-height($height:40px)
+  height: $height
+ol li
+  @include ol-height
+
+@mixin bg-padding-top($top:13px)
+  padding-top: $top
+
+@mixin bg1-width($width:5%)
+  width: $width
+
+@mixin text-align-center($text:center)
+  text-align: $text
+
+@mixin bg5-padding-right($right:20px)
+  padding-right: $right
+
+.bg1
+  @include bg1-width
+  @include text-align-center
+
+@mixin bg2-width($width:5%)
+  width: $width
+
+.bg2
+  @include bg2-width
+  text-align:center
+
+@mixin bg3-width($width:15%)
+  width: $width
+
+.bg3
+  @include bg3-width
+  text-align:left
+  @include bg-padding-top
+
+@mixin bg4-width($width:65%)
+  width: $width
+
+.bg4
+  @include bg4-width
+  text-align:left
+  @include bg-padding-top
+
+@mixin bg5-width($width:10%)
+  width: $width
+
+@mixin text-align-right($text:right)
+  text-align: $text
+
+.bg5
+  @include bg5-width
+  @include text-align-right
+  @include bg-padding-top
+  @include bg5-padding-right
+
+@mixin star-color($color:#c1cdc1)
+  color: $color
+.glyphicon:before
+  visibility: visible
+  @include star-color
+
+@mixin star-color($color:yellow)
+  color: $color
+
+.glyphicon.glyphicon-star-empty:checked:before
+  content: "\e006"
+  @include star-color
+
+input[type=checkbox].glyphicon
+  visibility: hidden
+
+@mixin margin-top($top:15px)
+  margin-top: $top
+@mixin margin-left($left:15px)
+  margin-left: $left
+@mixin width($width:15px)
+  width: $width
+@mixin height($height:15px)
+  height: $height
+input[type="checkbox"]
+  @include margin-top
+  @include margin-left
+  @include width
+  @include height
+
+@mixin bg4-gray($color:gray)
+  color: $color
+
+.bg4-gray
+  @include bg4-gray
+  @include font-weight

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BoardPlus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <div class="container">
+    <ul class="tabs">
+      <li>
+        <input name="tab" id="tab1" type="radio" checked />
+        <label for="tab1" class="tab1"><img class="main_img">メイン</label>
+        <div class="contents">
+          <ul class="table-ul">
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">会社沿革<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">株式会社FiNC（代表取締役社長 溝口勇児）設立<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都の選考に通り、東京都中央区海岸のライフサイエーに入居<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">Table for Twoとの取り組みが世界経済フォーラムで発表<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 5月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都千代田区永田町に「完全個室・成果保<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2013年 7月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">会社沿革<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">株式会社FiNC（代表取締役社長 溝口勇児）設立<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都の選考に通り、東京都中央区海岸のライフサイエーに入居<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">Table for Twoとの取り組みが世界経済フォーラムで発表<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 5月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都千代田区永田町に「完全個室・成果保<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2013年 7月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です。このアドレスは送信専用です。</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+          </ul>
+        </div>
+      </li>
+      <li class="li-tab2">
+        <input name="tab" id="tab2" type="radio"/>
+        <label for="tab2" class="tab2"><img class="social_img">ソーシャル</label>
+        <div class="contents">
+                    <ul class="table-ul">
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">会社沿革<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">株式会社FiNC（代表取締役社長 溝口勇児）設立<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都の選考に通り、東京都中央区海岸のライフサイエーに入居<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">Table for Twoとの取り組みが世界経済フォーラムで発表<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 5月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都千代田区永田町に「完全個室・成果保<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2013年 7月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">会社沿革<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">株式会社FiNC（代表取締役社長 溝口勇児）設立<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都の選考に通り、東京都中央区海岸のライフサイエーに入居<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">Table for Twoとの取り組みが世界経済フォーラムで発表<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 5月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都千代田区永田町に「完全個室・成果保<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2013年 7月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です。このアドレスは送信専用です。</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+          </ul>
+        </div>
+      </li>
+      <li class="li-tab3">
+        <input name="tab" id="tab3" type="radio"/>
+        <label for="tab3" class="tab3"><img class="promotion_img">プロモーション</label>
+        <div class="contents">
+                    <ul class="table-ul">
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">会社沿革<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">株式会社FiNC（代表取締役社長 溝口勇児）設立<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都の選考に通り、東京都中央区海岸のライフサイエーに入居<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">Table for Twoとの取り組みが世界経済フォーラムで発表<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 5月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都千代田区永田町に「完全個室・成果保<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2013年 7月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">会社沿革<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">株式会社FiNC（代表取締役社長 溝口勇児）設立<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都の選考に通り、東京都中央区海岸のライフサイエーに入居<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 4月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">Table for Twoとの取り組みが世界経済フォーラムで発表<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2012年 5月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">東京都千代田区永田町に「完全個室・成果保<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2013年 7月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+            <ol class="list">
+              <li class="bg1"><input type="checkbox"></li>
+              <li class="bg2"><input type="checkbox" class="glyphicon glyphicon-star-empty" ></li>
+              <li class="bg3">aa</li>
+              <li class="bg4">完全成果保証のダイエットサービス<span class="bg4-gray"> - このアドレスは送信専用です。このアドレスは送信専用です。</span></li>
+              <li class="bg5">2014年 3月</li>
+            </ol>
+          </ul>
+        </div>
+      </li>
+      <li class="li-tab4">
+        <input name="tab" id="tab4" type="radio"/>
+        <label for="tab4" class="tab4">+</label>
+        <div class="contents">
+          <p>追加タブ</p>
+          <p>タブ3の中身です。タブ3の中身です。タブ3の中身です。タブ3の中身です。</p>
+        </div>
+      </li>
+      <li class="li-tab5">
+        <input name="tab" id="tab5" type="radio"/>
+        <label for="tab5" class="tab5"></label>
+        <div class="contents">
+        </div>
+      </li>
+    </ul>
+
+  </div>
+
+</table>
+</body>
+</html>

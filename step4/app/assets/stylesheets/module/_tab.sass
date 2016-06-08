@@ -1,0 +1,157 @@
+body
+    background: white
+
+@mixin tabs_width($width:300px)
+    width: $width
+@mixin margin-top($top:3%)
+    margin-top: $top
+
+.tabs
+    position: relative
+    padding: 0
+    @include margin-top
+
+@mixin margin-top($top:1%)
+    margin-top: $top
+
+.contents .tab1
+    margin-top
+
+.tabs li
+    list-style: none
+    display: inline-block
+
+.tabs input[type=radio]
+    display: none
+
+.tabs label
+    display: block
+    cursor: pointer
+    padding: 15px
+    line-height: 20px
+    background-color: #f4f4f4
+    color: #000000
+    @include tabs_width
+    font-weight: normal
+
+@mixin border-top($top:2px solid black)
+    border-top: $top
+
+.tabs label:hover
+    background-color: #cccccc
+    color: #000000
+    @include border-top
+
+.tabs input[type=radio]:checked + label
+    background-color: #ffffff
+    color: #000000
+
+.tabs .contents
+    display: none
+    position: absolute
+    left: 0
+    background: #ffffff
+
+.tabs input[type=radio]:checked + label + .contents
+    display: block
+
+@mixin border($color:#ddd)
+    border: 1px solid $color
+
+@mixin border-right($color:#ddd)
+    border-right: 1px solid $color
+
+@mixin border-left($color:#ddd)
+    border-left: 1px solid $color
+
+@mixin border-top($color:#ddd)
+    border-top: 1px solid $color
+
+@mixin margin-bottom($bottom:0px)
+    margin-bottom: $bottom
+
+@mixin tab4-height($height:56px)
+    height: $height
+
+@mixin tab4-width($width:10px)
+    width: $width
+
+@mixin tab5-width($width:230px)
+    width: $width
+
+@mixin tab5-height($height:1px)
+    height: $height
+
+@mixin margin-top($top:55px)
+    margin-top: $top
+
+.tab1
+    @include margin-bottom
+    @include border-right
+    @include border-left
+
+.tab2
+    @include margin-bottom
+    @include border-right
+
+.tab3
+    @include margin-bottom
+    @include border-right
+
+.tab4
+    @include margin-bottom
+    @include tab4-height
+    @include border-right
+    @include border-top
+
+@mixin border-bottom($bottom:2px solid #ddd)
+    border-bottom: $bottom
+
+.li-tab2
+    @include border-bottom
+
+.li-tab3
+    @include border-bottom
+
+@mixin border-top-width($width:0px)
+    border-top-width: $width
+.li-tab4
+    @include tab4-width
+    @include border-bottom
+    @include border-top-width
+
+@mixin tab5-padding($top: 0px)
+    padding-top: $top
+
+.tab5
+    @include tab5-padding
+
+.li-tab5
+    @include tab5-width
+    @include margin-bottom
+    @include tab5-height
+    @include margin-top
+
+@mixin img-width($width:25px)
+    width: $width
+@mixin img-height($height:25px)
+    height: $height
+@mixin img-right($right:15%)
+    margin-right: $right
+.main_img
+    content: url(https://cloud.githubusercontent.com/assets/12003553/15646866/2baa7632-269b-11e6-9027-d408435a63e0.png)
+    @include img-width
+    @include img-height
+    @include img-right
+
+.social_img
+    content: url(https://cloud.githubusercontent.com/assets/12003553/15646867/2baab318-269b-11e6-955d-9ff4e0db64f9.png)
+    @include img-width
+    @include img-height
+    @include img-right
+
+.promotion_img
+    content: url(https://cloud.githubusercontent.com/assets/12003553/15646868/2bab67e0-269b-11e6-928e-14974d7821dd.png)
+    @include img-width
+    @include img-height
+    @include img-right

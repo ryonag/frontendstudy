@@ -1,0 +1,31 @@
+p{
+  font-size: 20px;
+  margin-bottom: 20px;
+  color:white;
+  font-family: arial;
+}
+div:before {
+      content: url(facebook.png) ;
+     /* position : relative ;
+      bottom : -0.16em ;
+      margin-right : 0.1em ;*/
+
+}
+div:after {
+      content: url(twitter.png) ;
+     /* position : relative ;
+      bottom : -0.16em ;
+      margin-right : 0.1em ;*/
+
+}
+.flexbox{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  border: 1px solid #aaa;
+  background-color: #0078d7;
+  width: 25%;
+}
